@@ -33,7 +33,7 @@ ArtSearchApp is a Spring Boot-based application that allows users to search for 
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone (https://github.com/yosrak5/Artwork.git)
+   git clone https://github.com/yosrak5/Artwork.git
    cd ArtSearchApp
      ```
 2. Build the project:
