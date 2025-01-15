@@ -79,10 +79,6 @@ After a successful build, Jenkins integrates with SonarQube.
 SonarQube analyzes the code for potential bugs, vulnerabilities, and code smells, providing feedback to developers and ensuring high-quality code.
 Artifact Management with Nexus:
 
-Once the build and tests are successful, Jenkins publishes the built artifacts (JAR files, WAR files, etc.) to Nexus.
-Nexus serves as a repository for storing these artifacts, allowing for better versioning and dependency management.
-The artifact can be reused in subsequent stages or for deployment.
-
 **4. Containerization with Docker:**
 
 Jenkins uses Docker to containerize the application, ensuring consistency across different environments (development, staging, production).
