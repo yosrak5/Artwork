@@ -48,6 +48,10 @@ ArtSearchApp is a Spring Boot-based application that allows users to search for 
    http://localhost:8080
 ## API Documentation
 ### Endpoints
-- GET /artworks: Fetch artworks based on a search query.
-  Parameters: query (String) - Search term.
-  Example: /artworks?query=Monet
+
+**GET /artworks**
+Fetch artworks based on a search query.
+- `query` (String): Search term to filter artworks.
+GET /artworks?query=Monet
+This will fetch artworks related to "Monet".
+
