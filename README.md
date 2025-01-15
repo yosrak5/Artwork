@@ -63,24 +63,35 @@ This will fetch artworks related to "Monet".
 
 To streamline the development process, automate testing, and ensure reliable deployments, the following CI/CD practices are recommended for this project.
 
-1. Automated Build Process
-Use of automation tools like **Jenkins** to automatically build the project every time code is pushed to the repository.
+**1. Version Control System (VCS):**
+
+Developers commit code changes to a version control system like Git.
+
+**2. Continuous Integration (CI) with Jenkins:**
+
+Jenkins monitors the VCS for changes.
+Upon detecting a change, Jenkins triggers the build process, compiles the code, and runs unit tests to ensure code quality.
 
 
-2. Automated Testing
-- **Unit Tests**: Integration of  **JUnit** into the CI pipeline to run automated tests on every code update.
+**3. Code Quality Analysis with SonarQube:**
 
-3. Code Quality Checks
-Integration of **SonarQube** into the pipeline to automatically analyze code quality, detect bugs, vulnerabilities, and enforce coding standards.
+After a successful build, Jenkins integrates with SonarQube.
+SonarQube analyzes the code for potential bugs, vulnerabilities, and code smells, providing feedback to developers and ensuring high-quality code.
+Artifact Management with Nexus:
 
-4. Automated Deployment 
-Use of  **Docker** to containerize the application, ensuring consistent environments across development, staging, and production.
+Once the build and tests are successful, Jenkins publishes the built artifacts (JAR files, WAR files, etc.) to Nexus.
+Nexus serves as a repository for storing these artifacts, allowing for better versioning and dependency management.
+The artifact can be reused in subsequent stages or for deployment.
 
-5. Monitoring and Alerts
-- **Prometheus/Grafana**: Integration of  **Prometheus** for application monitoring and **Grafana** for visualization. This will allow for monitoring the application's performance and health after deployment.
-- **Alerting**: Setying  up **alerting** mechanisms to notify the team in case of build failures, test failures, or production downtime via tools like **Slack** or **Email**.
+**4. Containerization with Docker:**
 
+Jenkins uses Docker to containerize the application, ensuring consistency across different environments (development, staging, production).
+Docker images are built using the artifacts stored in Nexus.
+Deployment to Staging Environment:
 
+The Docker container, containing the application, is deployed to a staging environment that mirrors production, allowing for thorough testing.
 
+**5. Monitoring with Prometheus and Grafana:**
 
-
+Prometheus collects metrics from the application and infrastructure, while Grafana visualizes these metrics.
+Alerts are configured to notify the team of any anomalies or performance issues.
