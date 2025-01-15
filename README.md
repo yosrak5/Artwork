@@ -1,6 +1,7 @@
 # ArtSearchApp
 
 ArtSearchApp is a Spring Boot-based application that allows users to search for artworks from the [Art Institute of Chicago API](https://api.artic.edu/docs/). It includes a simple frontend for user interaction.
+![image](https://github.com/user-attachments/assets/6a4e0b35-64e9-4918-83e0-dc9b2adff633)
 
 ---
 
