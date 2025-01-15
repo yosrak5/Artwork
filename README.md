@@ -63,22 +63,22 @@ This will fetch artworks related to "Monet".
 
 To streamline the development process, automate testing, and ensure reliable deployments, the following CI/CD practices are recommended for this project.
 
-## 1. Automated Build Process
-- **Tools**: Use CI tools like **Jenkins**, **GitHub Actions**, or **GitLab CI** to automatically build the project every time code is pushed to the repository.
-- **Process**: Configure the pipeline to trigger on every commit or pull request, ensuring that the build process is automatically initiated. This will ensure that the code is always in a deployable state.
+1. Automated Build Process
+Use of automation tools like **Jenkins** to automatically build the project every time code is pushed to the repository.
 
-## 2. Automated Testing
-- **Unit Tests**: Integrate **JUnit** into the CI pipeline to run automated tests on every code update.
 
-## 3. Code Quality Checks
-Integrate **SonarQube** into the pipeline to automatically analyze code quality, detect bugs, vulnerabilities, and enforce coding standards.
+2. Automated Testing
+- **Unit Tests**: Integration of  **JUnit** into the CI pipeline to run automated tests on every code update.
 
-## 4. Automated Deployment 
-Use **Docker** to containerize the application, ensuring consistent environments across development, staging, and production.
+3. Code Quality Checks
+Integration of **SonarQube** into the pipeline to automatically analyze code quality, detect bugs, vulnerabilities, and enforce coding standards.
 
-## 5. Monitoring and Alerts
-- **Prometheus/Grafana**: Integrate **Prometheus** for application monitoring and **Grafana** for visualization. This will allow for monitoring the application's performance and health after deployment.
-- **Alerting**: Set up **alerting** mechanisms to notify the team in case of build failures, test failures, or production downtime via tools like **Slack** or **Email**.
+4. Automated Deployment 
+Use of  **Docker** to containerize the application, ensuring consistent environments across development, staging, and production.
+
+5. Monitoring and Alerts
+- **Prometheus/Grafana**: Integration of  **Prometheus** for application monitoring and **Grafana** for visualization. This will allow for monitoring the application's performance and health after deployment.
+- **Alerting**: Setying  up **alerting** mechanisms to notify the team in case of build failures, test failures, or production downtime via tools like **Slack** or **Email**.
 
 
 
