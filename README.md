@@ -67,8 +67,26 @@ ArtSearchApp is a Spring Boot-based application that allows users to search for 
 
 ---
 
-## Directory Structure
-src/ ├── main/ │ ├── java/tn/esprit/artsearch/ │ │ ├── Config/ │ │ ├── controller/ │ │ ├── entity/ │ │ ├── Service/ │ ├── resources/ │ │ ├── static/ │ │ │ ├── index.html │ │ │ ├── styles.css │ │ │ └── script.js │ │ └── application.properties
+Directory Structure
+==================
+
+src/
+├── main/
+│   ├── java/
+│   │   └── tn/
+│   │       └── esprit/
+│   │           └── artsearch/
+│   │               ├── Config/
+│   │               ├── controller/
+│   │               ├── entity/
+│   │               ├── Service/
+│   ├── resources/
+│   │   ├── static/
+│   │   │   ├── index.html
+│   │   │   ├── styles.css
+│   │   │   └── script.js
+│   │   └── application.properties
+
 ---
 
 ## Getting Started
