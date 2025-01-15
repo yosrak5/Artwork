@@ -60,6 +60,7 @@ Fetch artworks based on a search query.
 
 This will fetch artworks related to "Monet".
 # CI/CD Suggestions for the Project
+![AWS CI_CD pipeline with Kubernetes](https://github.com/user-attachments/assets/c539bede-774a-48b1-a863-a973f61dab4f)
 
 To streamline the development process, automate testing, and ensure reliable deployments, the following CI/CD practices are recommended for this project.
 
