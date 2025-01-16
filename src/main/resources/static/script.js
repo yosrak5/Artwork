@@ -14,7 +14,7 @@ document.getElementById('searchButton').addEventListener('click', () => {
         })
         .then(data => {
             const container = document.getElementById('artworksContainer');
-            container.innerHTML = ''; // Clear previous results
+            container.innerHTML = ''; 
 
             if (data.length === 0) {
                 container.innerHTML = '<p>No artworks found.</p>';
