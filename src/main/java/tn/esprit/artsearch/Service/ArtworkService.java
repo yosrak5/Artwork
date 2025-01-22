@@ -1,5 +1,6 @@
 package tn.esprit.artsearch.Service;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import tn.esprit.artsearch.entity.Artwork;
@@ -11,8 +12,10 @@ import java.util.Map;
 @Service
 public class ArtworkService {
 
+    @Autowired
+    private RestTemplate restTemplate;
+
     public List<Artwork> searchArtworks(String query) {
-        RestTemplate restTemplate = new RestTemplate();
         String API_URL = "https://api.artic.edu/api/v1/artworks";
         String url = API_URL + "?q=" + query;
 
