@@ -11,6 +11,7 @@ import java.util.List;
 
 @RestController
 public class ArtworkController {
+
     @Autowired
     private ArtworkService artworkService;
 
