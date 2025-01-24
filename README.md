@@ -78,14 +78,11 @@ Upon detecting a change, Jenkins triggers the build process, compiles the code, 
 
 After a successful build, Jenkins integrates with SonarQube.
 SonarQube analyzes the code for potential bugs, vulnerabilities, and code smells, providing feedback to developers and ensuring high-quality code.
-Artifact Management with Nexus:
+
 
 **4. Containerization with Docker:**
 
 Jenkins uses Docker to containerize the application, ensuring consistency across different environments (development, staging, production).
-Docker images are built using the artifacts stored in Nexus.
-Deployment to Staging Environment:
-
 The Docker container, containing the application, is deployed to a staging environment that mirrors production, allowing for thorough testing.
 
 **5. Monitoring with Prometheus and Grafana:**
